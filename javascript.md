@@ -20,7 +20,6 @@
     
 
 
-
 ## javascript 基本语法     
 1.  写出Math Array String的方法 
 
@@ -384,6 +383,22 @@ document.cookie = 'name=aaa; path=/; domain=domain; secure';
 - arguments.callee为当前正在执行的函数本身，使用这个属性进行递归调用时需注意this的变化
 - arguments.caller为调用当前函数的函数（已被遗弃）
 - 转换为数组：<code>var args = Array.prototype.slice.call(arguments, 0);</code>
+
+
+可变参数长度的函数
+
+在JavaScript函数的内部，可以使用一个名为arguments的对象，其中包含了调用函数的时候，传递给该函数的所有参数，arguments虽然不是数组，但我们可以把它做为数组来使用，当然也可以使用下标，argument[0]表示接受的第一个参数，arguments[1]表示接受的第二个参数,,,,，以此类推；另外，arguments对象有一个length属性，可以用来代表参数的个数，用法就是arguments.length。
+
+```
+functionsum(){
+    varresult = 0;
+    vari = 0;
+    for(i;i<arguments.length;i++){//arguments.length表示传入参数的个数
+        result += arguments[i];//arguments[i]表示第i个参数
+    }
+    returnresult;
+}
+```
 
 ### DOM事件模型是如何的,编写一个EventUtil工具类实现事件管理兼容
 
