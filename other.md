@@ -14,3 +14,5 @@
 3.  浏览器的渲染过程
 4.  前端优化技巧
 5.  UML 是什么？在软件开发中怎么使用？
+	* 有哪几种关系？    泛化（Generalization）,实现（Realization），关联（Association)，聚合（Aggregation），组合(Composition)，依赖(Dependency)
+	* 用例图，包含的元素。参与者，用例，子系统，关系
